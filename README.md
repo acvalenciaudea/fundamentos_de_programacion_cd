@@ -154,3 +154,8 @@ python HighestCardGame/main.py
 
 *Desarrollado como parte del Taller 1 de Fundamentos de Programación*  
 *Especialización en Analítica y Ciencia de Datos - Universidad de Antioquia*
+
+
+Hola Soy el Commit de asistencia 
+Viernes 22 de Agosto 
+Camilo estuvo en clase
