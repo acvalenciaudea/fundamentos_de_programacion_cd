@@ -159,3 +159,7 @@ python HighestCardGame/main.py
 Hola Soy el Commit de asistencia 
 Viernes 22 de Agosto 
 Camilo estuvo en clase
+
+Marcando la asistencia de la 3 clase de la especializacion
+Sabado 23 de Agosto 
+Camilo llego temprano
