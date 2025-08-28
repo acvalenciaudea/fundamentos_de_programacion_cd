@@ -1,6 +1,6 @@
 import math
 from typing import List, Union
-from functools import lru_cache
+
 
 class Vector:
     """
@@ -75,7 +75,6 @@ class Vector:
         return self.components != other.components
 
     @property 
-    @lru_cache(maxsize=None)
     def magnitude(self) -> float:
         """Calcula y retorna la magnitud (norma) del vector."""
         return math.sqrt(sum(x ** 2 for x in self.components))
@@ -137,3 +136,75 @@ class Vector:
         
         # 4. Calcular el ángulo en radianes
         return math.acos(cos_angle)
+
+
+# =============================================================================
+# FUNCIONES DE VECTOR
+# =============================================================================
+
+def dot_product(v1: Vector, v2: Vector) -> float:
+    """
+    Calcula el producto punto entre dos vectores.
+    
+    Args:
+        v1: Primer vector
+        v2: Segundo vector
+        
+    Returns:
+        El producto punto como un número
+    """
+    return v1.dot(v2)
+
+
+def magnitude(v: Vector) -> float:
+    """
+    Calcula la magnitud (norma) de un vector.
+    
+    Args:
+        v: El vector
+        
+    Returns:
+        La magnitud del vector
+    """
+    return v.magnitude
+
+
+def normalize(v: Vector) -> Vector:
+    """
+    Normaliza un vector (lo convierte en vector unitario).
+    
+    Args:
+        v: El vector a normalizar
+        
+    Returns:
+        Un nuevo vector normalizado
+    """
+    return v.unit_vector
+
+
+def cross_product(v1: Vector, v2: Vector) -> Vector:
+    """
+    Calcula el producto cruz entre dos vectores 3D.
+    
+    Args:
+        v1: Primer vector
+        v2: Segundo vector
+        
+    Returns:
+        Un nuevo vector resultado del producto cruz
+    """
+    return v1.cross(v2)
+
+
+def angle_between(v1: Vector, v2: Vector) -> float:
+    """
+    Calcula el ángulo entre dos vectores.
+    
+    Args:
+        v1: Primer vector
+        v2: Segundo vector
+        
+    Returns:
+        El ángulo en radianes
+    """
+    return v1.angle_with(v2)
