@@ -163,3 +163,6 @@ Camilo estuvo en clase
 Marcando la asistencia de la 3 clase de la especializacion
 Sabado 23 de Agosto 
 Camilo llego temprano
+
+Asistencia 29 de agosto
+Camilo Valencia
